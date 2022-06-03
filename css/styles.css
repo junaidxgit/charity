@@ -175,6 +175,47 @@ img{
     margin-top: 6px;
     margin-left: 3px;
 }
+/* stats section */
+.stats{
+    background: var(--secondary-color);
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+}
+.stats p{
+    margin: 0;
+}
+
+.stats__number{
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+.stats__name{
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 500px) {
+    .stats{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+       
+    }
+}
+@media screen and (min-width: 500px) {
+    .stats{
+       grid-template-columns: repeat(4,1fr);
+       justify-items:center;
+       gap: 0;
+    }
+}
+
+
+
+
+
 
 
 
