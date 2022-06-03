@@ -103,7 +103,7 @@ h1,h2,h3{
     justify-content: center;
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:900px) {
     .grid--colsN{
         grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
     }
@@ -135,19 +135,27 @@ img{
 }
 
 /* achivement */
-.achivement__content{
+.quote__content{
     padding: 1rem;
     margin: 0;
 }
-.achivement__quote{
+.quote__p{
     font-size: 1.6rem;
     margin-top: 0.5rem;
 }
 
-.achivement__heading{
+.quote__heading{
     font-size: 1.8rem;
     font-weight: bold;
     color: black;
     margin-bottom: 0;
 }
+.quote__btn{
+    margin: 0 auto;
+    display: block;
+    padding-right: 1rem;
+}
 
+.quote {
+    padding: 2rem;
+}
