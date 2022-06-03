@@ -115,6 +115,11 @@ img{
     left: 10px;
 }
 
+/* list */
+.list{
+    list-style:none;
+}
+
 
 
 
