@@ -159,3 +159,24 @@ img{
 .quote {
     padding: 2rem;
 }
+/* card */
+.card{
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 15px lightblue;
+    padding: 2rem;
+}
+.card .input--group{
+    margin-bottom: 2rem;
+}
+
+.btn .icon{
+    width: 13px;
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+
+
+
+
