@@ -72,6 +72,10 @@ h1,h2,h3{
     width: 0;
     margin-left: 1rem;
 }
+.input--group__inline .input::placeholder{
+    opacity: 0.6;
+    font-size: 1.8rem;
+}
 .input--group__inline .btn{
     background: rgb(219 231 227);
     color: var(--primary-color);
