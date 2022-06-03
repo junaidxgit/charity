@@ -32,7 +32,18 @@ h2{
 h1,h2,h3{
     margin-top: 0;
 }
-
+/* container */
+.container{
+    max-width: 941px;
+    margin: 0 auto;
+   
+}
+.block--dark{
+    background: black;
+}
+.block{
+ 
+}
 /* button */
 .btn{
     padding:10px 23px 11px ;
@@ -89,6 +100,7 @@ h1,h2,h3{
 /* grid */
 .grid{
     display: grid;
+    justify-content: center;
 }
 
 @media screen and (min-width:1000px) {
@@ -106,7 +118,9 @@ img{
     border: 1px solid #ddd;
     overflow: visible;
     object-fit: contain;
-    position: absolute;
+    max-width: 400px;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
 }
 .img--container img{
     border-radius: 8px;
@@ -120,7 +134,20 @@ img{
     list-style:none;
 }
 
+/* achivement */
+.achivement__content{
+    padding: 1rem;
+    margin: 0;
+}
+.achivement__quote{
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
 
-
-
+.achivement__heading{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0;
+}
 
