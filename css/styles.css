@@ -69,6 +69,7 @@ h1,h2,h3{
     border: 1px solid #ddd;
     background:#fff;
     outline: 0;
+    display: block;
 }
 .label{
     display: block;
@@ -398,4 +399,36 @@ img{
     background: var(--secondary-color);
     text-align: center;
     line-height: 1.2;
+}
+
+/* block card */
+
+.item-bold{
+    font-weight: bolder;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+.item-normal{
+    font-weight: normal;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+
+.card-list{
+    text-align: center;
+}
+
+.block-card  .card{
+    width: 350px;
+    /* margin-left: 4rem; */
+    justify-self: center;
+}
+@media screen and (min-width:768px) {
+    .block-card  .card{
+        justify-self: end;
+    }
+    .block-card .card-list{
+        text-align: left;
+    }
+
 }
