@@ -34,7 +34,7 @@ h1,h2,h3{
 }
 /* container */
 .container{
-    max-width: 941px;
+    max-width: 900px;
     margin: 0 auto;
    
 }
@@ -132,6 +132,7 @@ img{
 /* list */
 .list{
     list-style:none;
+    padding-left: 0;
 }
 
 /* achivement */
@@ -232,11 +233,70 @@ img{
     }
 }
 
+/* nav */
+.list__items{
+    border-bottom: 1px solid gray;
+    margin-bottom: 2rem;
+}
+.list__items:hover {
+    color: rgb(144, 143, 143);
+    
+}
+.nav .btn:hover{
+    background: #329878;
 
+}
 
+.list__items:last-child{
+    border: 0;
+} 
+.nav{
+    background: green;
+    padding: 1rem;
+}
 
+.nav__logo{
+    font-size: 1.5rem;
+    max-width: 109px;
+    cursor: pointer;
 
+}
+.nav__logo img{
+    width: 50px;
+    height: 20px;
+    fill: black;
+}
 
+ .collapsible__content{
+    max-height: 0;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.25s;
+    margin: 0;
+}
+.collapsible--expanded .collapsible__content{
+    max-height: 100vh;
+    opacity: 1;
+}
+@media screen and (min-width:768px) {
+
+     .list__items{
+        border-bottom: 0;
+        margin-left: 1rem;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-evenly;
+        word-wrap: nowrap;
+    }
+     .collapsible__content{
+        display: flex;
+        opacity: 1;
+        max-height: 100vh;
+        padding-top: 2rem;
+        margin: 0 -8rem 0 0;
+    }    
+}
 
 
 
