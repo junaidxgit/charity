@@ -392,3 +392,10 @@ img{
 .block_achivement__grid .achivement {
     margin: 0;
 }
+
+/* forum */
+.forum{
+    background: var(--secondary-color);
+    text-align: center;
+    line-height: 1.2;
+}
