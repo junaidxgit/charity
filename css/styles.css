@@ -430,5 +430,28 @@ img{
     .block-card .card-list{
         text-align: left;
     }
-
+}
+/* block subscription */
+.block-subs{
+    text-align: center;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    padding-bottom: 4rem;
+    border-radius: var(--border-radius);
+}
+.block-subs p{
+    margin: 8px 0 1.5rem;
+    font-size: 1.6rem;
+    opacity: 0.8;
+}
+.block-subs .input--group__inline{
+    max-width: 400px;
+    margin: auto;
+}
+.block-subs h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 0;
+    
 }
