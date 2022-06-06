@@ -42,7 +42,7 @@ h1,h2,h3{
     background: black;
 }
 .block{
- 
+    margin-bottom: 6rem;
 }
 /* button */
 .btn{
@@ -257,7 +257,7 @@ img{
 .nav .btn{
     font-size: 1.2rem;
 }
-.nav .btn:hover{
+ .btn:hover{
     background: #329878;
 
 }
@@ -306,7 +306,6 @@ img{
     .nav{
         display: flex;
         justify-content: space-evenly;
-        word-wrap: nowrap;
     }
      .collapsible__content{
         display: flex;
@@ -377,7 +376,6 @@ img{
         display:inline ;
     }
     .discription__p{
-        flex-shrink: -1;
         margin-right: 2rem;
     }
     .discription__content .btn{
@@ -404,6 +402,8 @@ img{
     background: var(--secondary-color);
     text-align: center;
     line-height: 1.2;
+    padding: 3rem;
+    font-weight: 500;
 }
 
 /* block card */
