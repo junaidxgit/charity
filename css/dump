@@ -1,0 +1,83 @@
+.gallery {
+  width: 180px;
+  height: 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 14px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.gallery img, .gallery .img--container {
+  width: initial;
+  height: 100px;
+}
+.gallery .img--container {
+  margin: 0;
+}
+
+
+.grid1,
+.grid1 img {
+  grid-column: 1 / span 2;
+  height: 100px;
+  width: 100%;
+  justify-self: stretch;
+}
+
+body {
+  display: flex;
+  margin: 5rem;
+  column-gap: 16px;
+}
+
+.grid2  {
+    justify-self:flex-start ;
+}
+/* .grid4 img{
+    width: 70px;
+    height: 160px;
+} */
+.grid3 {
+  margin: 0;
+}
+.grid3,
+.grid3 img {
+  height: 200px;
+  width: 100px;
+}
+
+
+/* !hero content */
+/* hero content */
+.hero{
+  background-image: url(../images/hero-credit-zeyn-afuang@3x.webp);
+  background-size: 100vw 100vh;
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+.hero .nav{
+  margin-bottom: 0;
+  padding: 2rem;
+}
+.hero .hero__content{
+  max-width: 541px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 15rem;
+}
+.hero .nav{
+  margin-bottom: 15rem;
+}
+@media screen and (min-width:768px) {
+  .hero .hero__content{
+  padding-bottom: 20rem;
+  }
+  .hero .nav{
+      margin-bottom: 15rem;
+  }
+}
