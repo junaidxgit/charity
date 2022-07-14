@@ -1,0 +1,147 @@
+versio1
+
+
+
+/* galary  version1*/
+.gallery {
+  width: 180px;
+  height: 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 14px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+}
+
+.gallery img,
+.gallery .img--container {
+  width: initial;
+  height: 100px;
+}
+.gallery .img--container {
+  display: inline-block;
+  margin: 0;
+}
+.charity-grid .img--container {
+  display: inline-block;
+}
+
+.grid1,
+.grid1 img {
+  grid-column: 1 / span 2;
+  height: 100px;
+  width: 100%;
+  justify-self: stretch;
+}
+
+.charity-grid {
+  display: none;
+  row-gap: 16px;
+  margin-bottom: 6rem;
+  justify-content: center;
+  width: 100vw;
+  height: 200px;
+}
+@media screen and (min-width: 613px) {
+  .charity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
+}
+@media screen and (min-width: 1009px) {
+  .charity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-rows: none;
+  }
+}
+
+.grid2 {
+  justify-self: flex-start;
+}
+
+.grid3 {
+  margin: 0;
+  margin-right: 1.2rem;
+  margin-top: 1.9rem;
+}
+.grid4,
+.grid4 img {
+  margin-top: 1rem;
+}
+.grid1n,
+.grid1n img {
+  margin-left: rem;
+}
+.grid3,
+.grid3 img {
+  height: 200px;
+  width: 150px;
+  margin-left: 1rem;
+}
+.grid2n,
+.grid2n img {
+  width: 100px;
+  justify-self: center;
+}
+.grid3n {
+  justify-self: initial;
+  grid-column: initial;
+}
+.grid4n {
+  justify-self: end;
+}
+.grid-last,
+.grid7n {
+  justify-self: right;
+}
+.grid-first {
+  justify-self: left;
+}
+
+
+/* grid 2version */
+.gridgallery img {
+    width: 100%;
+  }
+  .gridcont {
+    display: inline-block;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    overflow: visible;
+    object-fit: contain;
+    max-width: 400px;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+  }
+  .gridcont img {
+    border-radius: 8px;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+  }
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .gridgallery {
+    
+  }
+  .gridchild {
+    grid-column: 1 / span 2;
+    justify-self: stretch;
+  }
+  .gridlast{
+    justify-self: right;
+  }
+  .galgrid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    height: 250px;
+    margin-bottom: 16rem;
+    /* gap: 3rem; */
+  }
