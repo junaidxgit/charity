@@ -598,6 +598,138 @@ img {
   width: 100px;
   justify-self: center;
 }
+
+/* Product Cards */
+.product-card {
+  border-radius: var(--border-radius);
+  border: 1px solid #ddd;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+}
+
+.product-card__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0 0 1rem;
+}
+
+.product-card__description {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.product-card__price {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.product-card__button {
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-card__button:hover {
+  background: #329878;
+}
+
+.products-grid {
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Benefits Section */
+.benefit-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.benefit-card__icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.benefit-card__text {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  border-radius: var(--border-radius);
+  border: 1px solid #ddd;
+  padding: 2rem;
+  background: white;
+  text-align: center;
+}
+
+.testimonial-card__quote {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.testimonial-card__author {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card__role {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Cart Count Badge */
+.cart-count {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  display: none;
+}
 .grid3n {
   justify-self: initial;
   grid-column: initial;
