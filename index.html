@@ -19,17 +19,22 @@
   <body>
   <section class="hero">
       <nav class="container collapsible nav">
-        <img class="nav__logo nav__menu logo-filtre" src="images/logo.svg" alt="">
+        <a href="index.html"><img class="nav__logo nav__menu logo-filtre" src="images/logo.svg" alt="Earth Heart Foundation"></a>
           <ul class="list nav__list collapsible__content ">
-            <li class="list__items">Home</li>
+            <li class="list__items"><a href="index.html">Home</a></li>
             <li class="list__items">About</li>
-            <li class="list__items">Project</li>
+            <li class="list__items"><a href="products.html">Products</a></li>
             <li class="list__items">Partner</li>
             <li class=""><img class="nav__logo nav__cols " src="images/logo.svg" alt=""></li>
             <li class="list__items">Mission</li>
             <li class="list__items">News</li>
             <li class="list__items">FAQ</li>
-            <li class="list__items"><button class="btn btn--primary" href="#">Share <img class="icon" src="images/lefc-logo.svg" alt=""></button></li>
+            <li class="list__items">
+              <a href="cart.html" style="position: relative; display: inline-block;">
+                Cart
+                <span data-cart-badge style="display: none; position: absolute; top: -8px; right: -12px; background: #e63946; color: white; border-radius: 50%; width: 20px; height: 20px; font-size: 12px; line-height: 20px; text-align: center;">0</span>
+              </a>
+            </li>
           </ul>
       </nav>
       <div class="container hero__content">
@@ -222,5 +227,6 @@
       </footer>
     </section>
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>

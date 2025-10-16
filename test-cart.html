@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart Functionality Test</title>
+</head>
+<body>
+  <h1>Cart Functionality Test</h1>
+  <div id="test-results"></div>
+  
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    function runTests() {
+      const results = [];
+      
+      CART.clearCart();
+      
+      results.push({
+        test: 'Product catalog should have 6 products',
+        passed: CART.products.length === 6
+      });
+      
+      results.push({
+        test: 'Get product by ID should work',
+        passed: CART.getProduct(1)?.name === 'Tree Planting Kit'
+      });
+      
+      CART.addItem(1, 2);
+      results.push({
+        test: 'Add item should work',
+        passed: CART.getItemCount() === 2
+      });
+      
+      CART.addItem(2, 1);
+      results.push({
+        test: 'Add second item should work',
+        passed: CART.getItemCount() === 3
+      });
+      
+      const subtotal = CART.getSubtotal();
+      results.push({
+        test: 'Subtotal should be correct (2*25 + 1*50 = 100)',
+        passed: subtotal === 100
+      });
+      
+      CART.updateQuantity(1, 3);
+      results.push({
+        test: 'Update quantity should work',
+        passed: CART.getItemCount() === 4
+      });
+      
+      CART.removeItem(2);
+      results.push({
+        test: 'Remove item should work',
+        passed: CART.getItemCount() === 3
+      });
+      
+      const cart = CART.loadCart();
+      results.push({
+        test: 'Cart should persist in localStorage',
+        passed: cart.length === 1 && cart[0].productId === 1
+      });
+      
+      CART.clearCart();
+      results.push({
+        test: 'Clear cart should work',
+        passed: CART.getItemCount() === 0
+      });
+      
+      const resultsDiv = document.getElementById('test-results');
+      let html = '<ul>';
+      results.forEach(result => {
+        const status = result.passed ? '✓ PASS' : '✗ FAIL';
+        const color = result.passed ? 'green' : 'red';
+        html += `<li style="color: ${color}; margin: 10px 0;">${status}: ${result.test}</li>`;
+      });
+      html += '</ul>';
+      
+      const passedCount = results.filter(r => r.passed).length;
+      html += `<h2>Results: ${passedCount}/${results.length} tests passed</h2>`;
+      
+      resultsDiv.innerHTML = html;
+    }
+    
+    document.addEventListener('DOMContentLoaded', runTests);
+  </script>
+</body>
+</html>
