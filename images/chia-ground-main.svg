@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="ground-bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f4f7fb" />
+      <stop offset="1" stop-color="#dce5f4" />
+    </linearGradient>
+    <linearGradient id="ground-bag" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#eef1f6" />
+    </linearGradient>
+    <linearGradient id="ground-label" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#3b4a9a" />
+      <stop offset="1" stop-color="#6b7fd8" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#ground-bg)" rx="32" />
+  <g transform="translate(160 70)">
+    <rect x="70" y="30" width="260" height="330" rx="36" fill="url(#ground-bag)" stroke="#d7dceb" stroke-width="4" />
+    <rect x="90" y="80" width="220" height="130" rx="24" fill="url(#ground-label)" />
+    <text x="200" y="135" font-family="Lato, Arial" font-size="32" text-anchor="middle" fill="#ffffff">GROUND</text>
+    <text x="200" y="165" font-family="Lato, Arial" font-size="18" text-anchor="middle" fill="#dbe3ff">chia powder</text>
+    <g fill="#3b4a9a" opacity="0.25">
+      <ellipse cx="140" cy="230" rx="18" ry="11" />
+      <ellipse cx="220" cy="250" rx="16" ry="10" />
+      <ellipse cx="190" cy="290" rx="14" ry="9" />
+      <ellipse cx="240" cy="310" rx="15" ry="9" />
+      <ellipse cx="150" cy="320" rx="13" ry="8" />
+    </g>
+    <path
+      d="M120 220c60-30 120-28 180 0"
+      fill="none"
+      stroke="#6b7fd8"
+      stroke-width="6"
+      stroke-linecap="round"
+      opacity="0.35"
+    />
+  </g>
+  <text x="320" y="432" text-anchor="middle" font-family="Lato, Arial" font-size="20" fill="#3b4a9a">
+    Ultra-fine cold milled chia
+  </text>
+</svg>

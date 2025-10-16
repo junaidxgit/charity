@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nutrient-dense whole chia seeds sourced for the Earth Heart Foundation product line."
+    />
+    <title>Whole Chia Seeds | Earth Heart Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="product-header">
+      <nav class="container collapsible nav">
+        <img
+          class="nav__logo nav__menu logo-filtre"
+          src="images/logo.svg"
+          alt="Earth Heart Foundation logo"
+        />
+        <ul class="list nav__list collapsible__content">
+          <li class="list__items">Home</li>
+          <li class="list__items">About</li>
+          <li class="list__items">Project</li>
+          <li class="list__items">Partner</li>
+          <li><img class="nav__logo nav__cols" src="images/logo.svg" alt="" /></li>
+          <li class="list__items">Mission</li>
+          <li class="list__items">News</li>
+          <li class="list__items">FAQ</li>
+          <li class="list__items">
+            <button class="btn btn--primary" type="button">
+              Share
+              <img class="icon" src="images/lefc-logo.svg" alt="" />
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="container product-header__intro">
+        <p>Earth Heart Foundation • Chia Product Line</p>
+        <a href="index.html">Back to home</a>
+      </div>
+    </header>
+
+    <main class="product-page">
+      <section class="product-hero container">
+        <div class="product-gallery">
+          <figure class="product-gallery__main">
+            <img
+              src="images/chia-whole-main.svg"
+              alt="Whole chia seeds packaged in a reusable pouch"
+            />
+          </figure>
+          <div class="product-gallery__thumbs">
+            <div class="product-gallery__thumb">
+              <img
+                src="images/chia-whole-close.svg"
+                alt="Close-up of hydrated chia seeds"
+              />
+            </div>
+            <div class="product-gallery__thumb">
+              <img
+                src="images/chia-whole-bowl.svg"
+                alt="Serving suggestion of chia seeds stirred into yogurt"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="product-overview">
+          <span class="product-overview__tag">Staple Superfood</span>
+          <h1>Whole Chia Seeds</h1>
+          <p>
+            Sustainably harvested Salvia hispanica seeds rich in omega-3 fats,
+            fibre, and complete protein. Our partners work with smallholder
+            farmers to ensure every pouch supports rewilding projects across
+            Cebu.
+          </p>
+          <ul class="product-highlights">
+            <li>Raw, unprocessed seeds with 100% traceable origin</li>
+            <li>Excellent thickener for breakfasts, baking, and beverages</li>
+            <li>Provides natural energy with slow-release carbohydrates</li>
+          </ul>
+          <div class="product-price">
+            $14.00
+            <span class="product-unit">/ 500 g pouch</span>
+          </div>
+          <div class="product-meta">
+            <span>5 g protein</span>
+            <span>11 g fibre</span>
+            <span>2.5 g omega-3 ALA</span>
+          </div>
+          <div class="quantity-control">
+            <button
+              class="qty-btn"
+              type="button"
+              data-action="decrement"
+              aria-label="Decrease quantity"
+            >
+              &minus;
+            </button>
+            <input
+              class="quantity-input"
+              type="number"
+              min="1"
+              value="1"
+              inputmode="numeric"
+              aria-label="Quantity"
+            />
+            <button
+              class="qty-btn"
+              type="button"
+              data-action="increment"
+              aria-label="Increase quantity"
+            >
+              +
+            </button>
+          </div>
+          <button
+            class="btn btn--primary add-to-cart"
+            type="button"
+            data-product-name="Whole Chia Seed pouch"
+            data-product-plural="Whole Chia Seed pouches"
+          >
+            Add to Cart
+          </button>
+          <p class="add-to-cart__status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="product-description container">
+        <h2>Why you'll love Whole Chia Seeds</h2>
+        <div class="product-description__grid">
+          <p>
+            These versatile seeds expand up to 10× their weight in liquid,
+            delivering satiating texture to overnight oats, smoothies, and vegan
+            desserts. Lightly nutty in flavour, they complement both sweet and
+            savoury recipes while supporting hydration.
+          </p>
+          <p>
+            Each batch is cold-cleaned to preserve fragile omega oils and stored
+            in recyclable pouches with a moisture barrier so you experience
+            optimal crunch with every scoop.
+          </p>
+          <div class="product-callout">
+            Stir 3 tablespoons into plant milk and let it rest for 20 minutes to
+            create an instant chia pudding rich in fibre and heart-friendly fats.
+          </div>
+        </div>
+      </section>
+
+      <section class="product-nutrition container">
+        <h2>Nutritional information</h2>
+        <table class="nutrition-table">
+          <caption>Per 30 g serving</caption>
+          <thead>
+            <tr>
+              <th scope="col">Nutrient</th>
+              <th scope="col">Amount</th>
+              <th scope="col">% Daily Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Calories</td>
+              <td>150 kcal</td>
+              <td>7%</td>
+            </tr>
+            <tr>
+              <td>Total fat</td>
+              <td>9 g</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td>Omega-3 ALA</td>
+              <td>2.5 g</td>
+              <td>156%</td>
+            </tr>
+            <tr>
+              <td>Carbohydrates</td>
+              <td>13 g</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <td>Fibre</td>
+              <td>11 g</td>
+              <td>39%</td>
+            </tr>
+            <tr>
+              <td>Protein</td>
+              <td>5 g</td>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <td>Calcium</td>
+              <td>140 mg</td>
+              <td>11%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="related-products container">
+        <h2>Related products</h2>
+        <ul class="related-products__list">
+          <li>
+            <a class="related-product-card" href="ground-chia-powder.html">
+              Ground Chia Powder
+              <span>Finely milled for effortless blending.</span>
+            </a>
+          </li>
+          <li>
+            <a class="related-product-card" href="chia-protein-blend.html">
+              Chia Protein Blend
+              <span>Balanced plant protein with cacao and coconut.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <section class="block--dark">
+      <footer class="container footer">
+        <ul class="list list__brand">
+          <li class="list__items">
+            <img src="images/logo.svg" alt="" class="footer__logo logo-filtre" />
+          </li>
+          <li class="list__items footer__discription logo-filtre">
+            Earth Heart Foundation Cebu &comp; 2020. All Rights Reserved
+          </li>
+          <li class="list__items">
+            <img src="images/social.svg" alt="" class="media logo-filtre" />
+          </li>
+        </ul>
+        <ul class="list list__about">
+          <li class="footer__discription logo-filtre">Privacy Policy</li>
+          <li class="list__items footer__discription logo-filtre">
+            Terms And Conditions
+          </li>
+          <li class="footer__discription logo-filtre">+631119111</li>
+          <li class="footer__discription logo-filtre">United 12bg streets</li>
+          <li class="footer__discription logo-filtre">city,Country444</li>
+        </ul>
+      </footer>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
