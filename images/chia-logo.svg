@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="chiaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a5d3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b8059;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Chia seed cluster icon -->
+  <g transform="translate(10, 15)">
+    <circle cx="15" cy="15" r="4" fill="url(#chiaGradient)" />
+    <circle cx="23" cy="12" r="3.5" fill="url(#chiaGradient)" />
+    <circle cx="23" cy="20" r="3.5" fill="url(#chiaGradient)" />
+    <circle cx="30" cy="15" r="4" fill="url(#chiaGradient)" />
+    <circle cx="19" cy="15" r="2.5" fill="#d4a574" />
+  </g>
+  
+  <!-- Text -->
+  <text x="55" y="35" font-family="Lato, Arial, sans-serif" font-size="24" font-weight="700" fill="#4a5d3e">CHIA</text>
+  <text x="55" y="50" font-family="Lato, Arial, sans-serif" font-size="12" font-weight="400" fill="#666" letter-spacing="2">COMMERCE</text>
+</svg>
