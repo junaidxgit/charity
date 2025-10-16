@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Complete your Earth Heart Foundation donation by providing your details and payment information."
+    />
+    <title>Checkout | Earth Heart Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="page-banner">
+      <nav class="container collapsible nav nav--page">
+        <img
+          class="nav__logo nav__menu logo-filtre"
+          src="images/logo.svg"
+          alt=""
+        />
+        <ul class="list nav__list collapsible__content ">
+          <li class="list__items">Home</li>
+          <li class="list__items">About</li>
+          <li class="list__items">Project</li>
+          <li class="list__items">Partner</li>
+          <li class=""><img class="nav__logo nav__cols " src="images/logo.svg" alt=""></li>
+          <li class="list__items">Mission</li>
+          <li class="list__items">News</li>
+          <li class="list__items">FAQ</li>
+          <li class="list__items"><button class="btn btn--primary" href="#">Share <img class="icon" src="images/lefc-logo.svg" alt=""></button></li>
+        </ul>
+      </nav>
+      <div class="container page-banner__content">
+        <h1 class="page-title">Checkout</h1>
+        <p class="page-subtitle">
+          Provide your details below to finalize your order.
+        </p>
+      </div>
+    </header>
+    <main class="page checkout-page">
+      <div class="container">
+        <div class="checkout-layout">
+          <form
+            class="checkout-form"
+            id="checkout-form"
+            data-checkout-form
+            novalidate
+          >
+            <section class="form-section" aria-labelledby="contact-heading">
+              <h2 id="contact-heading">Contact information</h2>
+              <div class="form-grid">
+                <div class="form-field form-field--span-2">
+                  <label class="label" for="checkout-email">Email address</label>
+                  <input
+                    class="input"
+                    type="email"
+                    id="checkout-email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                    data-field-email
+                  />
+                </div>
+                <div class="form-field form-field--span-2">
+                  <label class="label" for="checkout-phone">Phone (optional)</label>
+                  <input
+                    class="input"
+                    type="tel"
+                    id="checkout-phone"
+                    name="phone"
+                    placeholder="+63 900 000 0000"
+                    autocomplete="tel"
+                    data-field-phone
+                  />
+                </div>
+              </div>
+            </section>
+            <section class="form-section" aria-labelledby="shipping-heading">
+              <h2 id="shipping-heading">Shipping address</h2>
+              <div class="form-grid form-grid--two">
+                <div class="form-field">
+                  <label class="label" for="checkout-first-name">First name</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-first-name"
+                    name="firstName"
+                    autocomplete="given-name"
+                    required
+                    data-field-first-name
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="label" for="checkout-last-name">Last name</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-last-name"
+                    name="lastName"
+                    autocomplete="family-name"
+                    required
+                    data-field-last-name
+                  />
+                </div>
+                <div class="form-field form-field--span-2">
+                  <label class="label" for="checkout-address-line1">Address line 1</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-address-line1"
+                    name="address1"
+                    autocomplete="address-line1"
+                    required
+                    data-field-address-line1
+                  />
+                </div>
+                <div class="form-field form-field--span-2">
+                  <label class="label" for="checkout-address-line2">Address line 2 (optional)</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-address-line2"
+                    name="address2"
+                    autocomplete="address-line2"
+                    data-field-address-line2
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="label" for="checkout-city">City</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-city"
+                    name="city"
+                    autocomplete="address-level2"
+                    required
+                    data-field-city
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="label" for="checkout-region">State/Province</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-region"
+                    name="region"
+                    autocomplete="address-level1"
+                    required
+                    data-field-region
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="label" for="checkout-postal">Postal code</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-postal"
+                    name="postal"
+                    autocomplete="postal-code"
+                    required
+                    data-field-postal
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="label" for="checkout-country">Country</label>
+                  <select
+                    class="input"
+                    id="checkout-country"
+                    name="country"
+                    autocomplete="country-name"
+                    required
+                    data-field-country
+                  >
+                    <option value="">Select country</option>
+                    <option value="PH">Philippines</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+            <section class="form-section" aria-labelledby="payment-heading">
+              <h2 id="payment-heading">Payment details</h2>
+              <div class="form-grid form-grid--two">
+                <div class="form-field form-field--span-2">
+                  <label class="label" for="checkout-card-name">Name on card</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-card-name"
+                    name="cardName"
+                    autocomplete="cc-name"
+                    required
+                    data-field-card-name
+                  />
+                </div>
+                <div class="form-field form-field--span-2">
+                  <label class="label" for="checkout-card-number">Card number</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-card-number"
+                    name="cardNumber"
+                    inputmode="numeric"
+                    autocomplete="cc-number"
+                    required
+                    data-field-card-number
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="label" for="checkout-card-expiration">Expiry</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-card-expiration"
+                    name="cardExpiration"
+                    placeholder="MM/YY"
+                    autocomplete="cc-exp"
+                    required
+                    data-field-card-expiration
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="label" for="checkout-card-cvc">CVC</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="checkout-card-cvc"
+                    name="cardCvc"
+                    autocomplete="cc-csc"
+                    required
+                    data-field-card-cvc
+                  />
+                </div>
+              </div>
+            </section>
+            <div class="checkout-form__actions">
+              <a class="checkout-form__back" href="cart.html" data-back-to-cart>
+                Return to cart
+              </a>
+              <button
+                class="btn btn--primary checkout-form__submit"
+                type="submit"
+                data-submit-order
+              >
+                Place order
+              </button>
+            </div>
+          </form>
+          <aside class="order-summary" aria-labelledby="summary-heading" data-order-summary>
+            <h2 class="order-summary__title" id="summary-heading">Order summary</h2>
+            <p class="order-summary__empty" data-summary-empty>
+              We’ll display a breakdown of your cart once items are loaded.
+            </p>
+            <ul class="order-summary__items" data-summary-items>
+              <li class="order-summary__item" data-summary-item-template hidden>
+                <span class="order-summary__item-name" data-summary-item-name>
+                  Sample item
+                </span>
+                <span class="order-summary__item-quantity" data-summary-item-quantity>
+                  1×
+                </span>
+                <span class="order-summary__item-price" data-summary-item-price>
+                  $0.00
+                </span>
+              </li>
+            </ul>
+            <dl class="order-summary__list">
+              <div class="order-summary__row">
+                <dt>Subtotal</dt>
+                <dd data-summary-subtotal>$0.00</dd>
+              </div>
+              <div class="order-summary__row">
+                <dt>Shipping</dt>
+                <dd data-summary-shipping>Calculated at checkout</dd>
+              </div>
+              <div class="order-summary__row">
+                <dt>Discount</dt>
+                <dd data-summary-discount>—</dd>
+              </div>
+              <div class="order-summary__row">
+                <dt>Tax</dt>
+                <dd data-summary-tax>—</dd>
+              </div>
+              <div class="order-summary__row order-summary__row--total">
+                <dt>Total</dt>
+                <dd data-summary-total>$0.00</dd>
+              </div>
+            </dl>
+            <button
+              class="btn btn--primary order-summary__cta"
+              type="submit"
+              form="checkout-form"
+              data-submit-order
+            >
+              Place order
+            </button>
+            <p class="order-summary__note" data-summary-note>
+              All totals are shown in USD. Final charges will appear on your receipt.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <section class="block--dark">
+      <footer class="container footer">
+        <ul class=" list list__brand">
+          <li class="list__items"><img src="images/logo.svg" alt="" class="footer__logo logo-filtre"></li>
+          <li class="list__items footer__discription logo-filtre">Earth Heart Foundation Cebu &comp; 2020. All Rights Reserved</li>
+          <li class="list__items"><img src="images/social.svg" alt="" class="media logo-filtre"></li>
+        </ul>
+        <ul class="list list__about">
+          <li class=" footer__discription logo-filtre">Privacy Policy</li>
+          <li class="list__items footer__discription logo-filtre">Terms And Conditions</li>
+          <li class=" footer__discription logo-filtre">+631119111</li>
+          <li class=" footer__discription logo-filtre">United 12bg streets </li>
+          <li class=" footer__discription logo-filtre">city,Country444</li>
+        </ul>
+      </footer>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
