@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420">
+  <defs>
+    <linearGradient id="smoothie-bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef3ff" />
+      <stop offset="1" stop-color="#d9e3ff" />
+    </linearGradient>
+    <linearGradient id="smoothie" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#8aa2ff" />
+      <stop offset="1" stop-color="#5c76d6" />
+    </linearGradient>
+  </defs>
+  <rect width="560" height="420" fill="url(#smoothie-bg)" rx="28" />
+  <g transform="translate(180 40)">
+    <rect x="80" y="40" width="40" height="180" rx="20" fill="#ffffff" opacity="0.6" />
+    <path
+      d="M40 340h200l20-220H20z"
+      fill="#ffffff"
+      stroke="#cfd6f0"
+      stroke-width="6"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M60 320h160l14-180H46z"
+      fill="url(#smoothie)"
+      opacity="0.9"
+    />
+    <ellipse cx="140" cy="120" rx="70" ry="22" fill="#ffffff" opacity="0.45" />
+    <g fill="#fdfdff" opacity="0.8">
+      <circle cx="120" cy="220" r="10" />
+      <circle cx="170" cy="240" r="8" />
+      <circle cx="150" cy="270" r="9" />
+    </g>
+    <text x="140" y="360" font-family="Lato, Arial" font-size="22" text-anchor="middle" fill="#3b4a9a">
+      Smoothie bowl inspiration
+    </text>
+  </g>
+</svg>

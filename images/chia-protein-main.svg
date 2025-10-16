@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="protein-bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f9f3f1" />
+      <stop offset="1" stop-color="#f0dcd3" />
+    </linearGradient>
+    <linearGradient id="protein-can" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#f6ede9" />
+    </linearGradient>
+    <linearGradient id="protein-label" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#a1553f" />
+      <stop offset="1" stop-color="#d98059" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#protein-bg)" rx="32" />
+  <g transform="translate(180 60)">
+    <rect x="40" y="30" width="240" height="340" rx="40" fill="url(#protein-can)" stroke="#e4cfc4" stroke-width="5" />
+    <rect x="60" y="90" width="200" height="140" rx="28" fill="url(#protein-label)" />
+    <text x="160" y="145" font-family="Lato, Arial" font-size="32" text-anchor="middle" fill="#ffffff">PROTEIN</text>
+    <text x="160" y="175" font-family="Lato, Arial" font-size="18" text-anchor="middle" fill="#ffd8c6">chia blend</text>
+    <g fill="#a1553f" opacity="0.3">
+      <circle cx="120" cy="250" r="14" />
+      <circle cx="200" cy="270" r="12" />
+      <circle cx="160" cy="310" r="10" />
+      <circle cx="220" cy="310" r="11" />
+      <circle cx="110" cy="300" r="9" />
+    </g>
+    <path
+      d="M90 230c50-25 100-25 150 0"
+      fill="none"
+      stroke="#d98059"
+      stroke-width="6"
+      stroke-linecap="round"
+      opacity="0.4"
+    />
+    <rect x="100" y="20" width="120" height="16" rx="8" fill="#ffe4d6" />
+  </g>
+  <text x="320" y="432" text-anchor="middle" font-family="Lato, Arial" font-size="20" fill="#a1553f">
+    Functional blend with adaptogens
+  </text>
+</svg>

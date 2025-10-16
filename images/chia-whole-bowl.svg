@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420">
+  <defs>
+    <linearGradient id="bowl-bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7fbf5" />
+      <stop offset="1" stop-color="#e2f1e8" />
+    </linearGradient>
+    <linearGradient id="bowl-body" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#f4f7f5" />
+    </linearGradient>
+  </defs>
+  <rect width="560" height="420" fill="url(#bowl-bg)" rx="32" />
+  <g transform="translate(60 70)">
+    <ellipse cx="220" cy="220" rx="220" ry="110" fill="#d9ebe0" opacity="0.4" />
+    <ellipse cx="220" cy="190" rx="200" ry="90" fill="#a9d2bc" opacity="0.25" />
+    <path
+      d="M40 120c20 90 180 120 360 0l-18 80c-26 60-300 68-324-4z"
+      fill="url(#bowl-body)"
+      stroke="#d5ded8"
+      stroke-width="6"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M64 140c28 70 154 100 292 2"
+      fill="none"
+      stroke="#0e6248"
+      stroke-width="4"
+      stroke-linecap="round"
+      opacity="0.25"
+    />
+    <g fill="#0e6248" opacity="0.35">
+      <circle cx="150" cy="150" r="10" />
+      <circle cx="190" cy="170" r="8" />
+      <circle cx="220" cy="150" r="9" />
+      <circle cx="260" cy="168" r="7" />
+      <circle cx="290" cy="150" r="10" />
+      <circle cx="245" cy="185" r="8" />
+      <circle cx="205" cy="200" r="7" />
+      <circle cx="170" cy="185" r="6" />
+    </g>
+    <text x="220" y="250" font-family="Lato, Arial" font-size="26" text-anchor="middle" fill="#0e6248">
+      Yogurt topper inspiration
+    </text>
+  </g>
+</svg>

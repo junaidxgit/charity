@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <defs>
+    <radialGradient id="ground-close-bg" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#dbe2f2" />
+    </radialGradient>
+  </defs>
+  <rect width="480" height="480" fill="url(#ground-close-bg)" rx="36" />
+  <g transform="translate(70 70)">
+    <circle cx="170" cy="170" r="170" fill="#f7f9ff" />
+    <g>
+      <path
+        d="M40 150c60-80 220-80 300 0-60 90-220 90-300 0z"
+        fill="#3b4a9a"
+        opacity="0.18"
+      />
+      <path
+        d="M60 155c50-60 190-60 260 0-50 70-190 70-260 0z"
+        fill="#3b4a9a"
+        opacity="0.12"
+      />
+      <path
+        d="M90 170c40-40 150-40 210 0-40 50-150 50-210 0z"
+        fill="#3b4a9a"
+        opacity="0.28"
+      />
+    </g>
+    <g fill="#6b7fd8" opacity="0.45">
+      <circle cx="150" cy="150" r="14" />
+      <circle cx="190" cy="170" r="12" />
+      <circle cx="220" cy="140" r="11" />
+      <circle cx="180" cy="210" r="10" />
+      <circle cx="130" cy="190" r="10" />
+      <circle cx="220" cy="200" r="9" />
+    </g>
+  </g>
+  <text x="240" y="430" font-family="Lato, Arial" font-size="20" text-anchor="middle" fill="#3b4a9a">
+    Finely sifted texture detail
+  </text>
+</svg>

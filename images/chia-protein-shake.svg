@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420">
+  <defs>
+    <linearGradient id="protein-shake-bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8ede8" />
+      <stop offset="1" stop-color="#f2d8cc" />
+    </linearGradient>
+    <linearGradient id="protein-shake" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d07b57" />
+      <stop offset="1" stop-color="#a5543f" />
+    </linearGradient>
+  </defs>
+  <rect width="560" height="420" fill="url(#protein-shake-bg)" rx="30" />
+  <g transform="translate(180 50)">
+    <rect x="80" y="20" width="42" height="190" rx="21" fill="#ffffff" opacity="0.6" />
+    <path
+      d="M40 340h210l22-220H18z"
+      fill="#ffffff"
+      stroke="#eac7b8"
+      stroke-width="6"
+      stroke-linejoin="round"
+    />
+    <path d="M58 318h174l16-180H42z" fill="url(#protein-shake)" opacity="0.92" />
+    <ellipse cx="145" cy="120" rx="75" ry="24" fill="#ffffff" opacity="0.5" />
+    <g fill="#ffe7d9" opacity="0.8">
+      <circle cx="125" cy="220" r="11" />
+      <circle cx="190" cy="250" r="9" />
+      <circle cx="160" cy="280" r="10" />
+    </g>
+    <text x="145" y="360" font-family="Lato, Arial" font-size="22" text-anchor="middle" fill="#a5543f">
+      Iced mocha recovery shake
+    </text>
+  </g>
+</svg>
