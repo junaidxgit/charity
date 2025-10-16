@@ -4,223 +4,299 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Charity page">
-    <meta property="og:title" content="EarthHeart Foundation" >
-    <title>Earth Heart Foundation</title>
+    <meta name="description" content="Chia Commerce - Premium organic chia seeds and natural superfood products">
+    <meta property="og:title" content="Chia Commerce - Premium Organic Chia Seeds">
+    <title>Chia Commerce - Premium Organic Chia Seeds</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-  <section class="hero">
-      <nav class="container collapsible nav">
-        <img class="nav__logo nav__menu logo-filtre" src="images/logo.svg" alt="">
-          <ul class="list nav__list collapsible__content ">
-            <li class="list__items">Home</li>
-            <li class="list__items">About</li>
-            <li class="list__items">Project</li>
-            <li class="list__items">Partner</li>
-            <li class=""><img class="nav__logo nav__cols " src="images/logo.svg" alt=""></li>
-            <li class="list__items">Mission</li>
-            <li class="list__items">News</li>
-            <li class="list__items">FAQ</li>
-            <li class="list__items"><button class="btn btn--primary" href="#">Share <img class="icon" src="images/lefc-logo.svg" alt=""></button></li>
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__logo" aria-label="Chia Commerce Home">
+          <img src="images/chia-logo.svg" alt="Chia Commerce" />
+        </a>
+        
+        <nav class="nav" id="main-nav" aria-label="Main navigation">
+          <button 
+            class="nav__toggle" 
+            id="nav-toggle"
+            aria-expanded="false" 
+            aria-controls="nav-list"
+            aria-label="Toggle navigation menu"
+          >
+            <span class="nav__toggle-icon"></span>
+          </button>
+          
+          <ul class="nav__list" id="nav-list">
+            <li class="nav__item">
+              <a href="/" class="nav__link nav__link--active" aria-current="page">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="/products.html" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="/cart.html" class="nav__link cart-badge">
+                <span>Cart</span>
+                <span class="cart-badge__count cart-badge__count--hidden" id="cart-count" aria-label="Cart items count">0</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/checkout.html" class="nav__link btn btn--primary btn--small">Checkout</a>
+            </li>
           </ul>
-      </nav>
-      <div class="container hero__content">
-        <h1>Transforming Cebuano lives by restoring the environment</h1>
-        <footer>
-          <button class="btn btn--primary btn--streched" type="submit">learn more</button>
-          <button class="btn btn--primary" type="submit">contact us</button>
-        </footer>
+        </nav>
       </div>
-    </section>
-    <section class="block forum">
-      <p class="container">
-        The Earth Heart Foundation Cebu (EHFC) is a non-profit organization that
-        aims to assist and uplift rural communities in Cebu with the support of
-        various environmental projects.
-      </p>
-    </section>
-    <section class="block block-achivement">
-      <div class="container block-discription">
-        <div class="discription__content">
-        <header>
-          <h3 class="discription__heading">What we do</h3>
-            <p class="discription__p">Our mission is to create sustainable work gravida, tellus sit amet pretium auctor, mauris ligula egestas tellus, sed porta erat nunc ut ligula.</p>
-      
-        </header>
-         <button class="btn btn--primary btn--streched" type="submit">read more</button>
-        </div>
-      </div>
-  
-      <div class="container block_achivement__grid grid grid--colsN">
-        <div class="img--container achivement" >
-          <img
-            src="images/photo.webp"
-            srcset="images/photo@2x.webp 2x, images/photo@3x.webp 3x"
-          />
-          <blockquote class="quote__content">
-            <h3 class="quote__heading">Lorem ipsum dolor sit amet.</h3>
-            <p class=" quote__p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium
-              modi provident voluptatibus fugit autem aut eum aperiam odio! Ratione
-              minus quam
-            </p>
-          </blockquote>
-        </div>
-        <div class="img--container achivement" >
-          <img
-            src="images/photo.webp"
-            srcset="images/photo@2x.webp 2x, images/photo@3x.webp 3x"
-          />
-          <blockquote class="quote__content">
-            <h3 class="quote__heading">Lorem ipsum dolor sit amet.</h3>
-            <p class=" quote__p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium
-              modi provident voluptatibus fugit autem aut eum aperiam odio! Ratione
-              minus quam
-            </p>
-          </blockquote>
-        </div>
-        <div class="img--container achivement" >
-          <img
-            src="images/photo.webp"
-            srcset="images/photo@2x.webp 2x, images/photo@3x.webp 3x"
-          />
-          <blockquote class="quote__content">
-            <h3 class="quote__heading">Lorem ipsum dolor sit amet.</h3>
-            <p class=" quote__p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium
-              modi provident voluptatibus fugit autem aut eum aperiam odio! Ratione
-              minus quam
-            </p>
-          </blockquote>
-        </div>
-      </div>
-  </section>
-    <section class="block container grid stats ">
-      <div class="stats__section">
-        <p class="stats__number">1,600</p>
-        <p class="stats__name">Donation</p>
-      </div>
-       <div class="stats__section">
-        <p class="stats__number">1,600</p>
-        <p class="stats__name">Donation</p>
-      </div>
-       <div class="stats__section">
-        <p class="stats__number">1,600</p>
-        <p class="stats__name">Donation</p>
-      </div>
-       <div class="stats__section">
-        <p class="stats__number">1,600</p>
-        <p class="stats__name">Donation</p>
-      </div>
-    </section>
-    <section class="block block-card container grid grid--colsN">
-      <ul class="list card-list">
-        <li class="item-bold">
-          Want to help? We are always in need of donations, vitae ex quam.
-          Quisque nulla purus, elementum eu nunc at, cursus finibus tortor.
-        </li>
-        <li  class="item-normal">
-          Mauris eget elit pharetra neque dictum bibendum at vestibulum sapien.
-          Proin sodales, ex ac ornare hendrerit, nulla nisl semper leo. justo.
-        </li>
-        <li class="item-normal">
-          Nulla porta dui non libero viverra mattis a nec velit. Integer nulla
-          tellus, dignissim eget posuere a, lobortis in justo. Quisque hendrerit
-          egestas neque. Donec turpis sapien, dignissim in augue ac, venenatis
-          interdum
-        </li>
-      </ul>
-      <div class="card">
-        <div class="input--group" >
-          <label class="label" for="range">normal</label>
-          <input class="input" type="text" name="range" id="range">
-        </div>
-        <div class="input--group" >
-          <label class="label" for="range2">normal</label>
-          <input class="input" type="text" name="range" id="range2">
-        </div>
-         <div class="input--group" >
-          <label class="label" for="range3">normal</label>
-          <input class="input" type="text" name="range" id="range3">
-        </div>
-        <button class="btn btn--primary" type="submit">submit <img class="icon" src="images/lefc-logo.svg" alt=""></button>
-      </div>
-    </section>
-    <section class="block block-achivement">
-      <div class="container block-discription">
-        <div class="discription__content">
-        <header>
-          <h3 class="discription__heading">What we do</h3>
-            <p class="discription__p">Our mission is to create sustainable work gravida, tellus sit amet pretium auctor, mauris ligula egestas tellus, sed porta erat nunc ut ligula.</p>
-      
-        </header>
-         <button class="btn btn--primary btn--streched" type="submit">read more</button>
-        </div>
-      </div>
+    </header>
 
-      <div class="container block_achivement__grid grid grid--colsN">
-        <blockquote class="quote__content img--container quote">
-          <h3 class="quote__heading">Lorem ipsum dolor sit amet.</h3>
-          <p class="quote__p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            assumenda totam sit omnis, rem tempore quidem numquam culpa dolore iure.
-          </p>
-          <button class="btn btn--primary quote__btn" type="submit">Learn More</button>
-        </blockquote>
-        <blockquote class="quote__content img--container quote">
-          <h3 class="quote__heading">Lorem ipsum dolor sit amet.</h3>
-          <p class="quote__p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            assumenda totam sit omnis, rem tempore quidem numquam culpa dolore iure.
-          </p>
-          <button class="btn btn--primary quote__btn" type="submit">Learn More</button>
-        </blockquote>
-        <blockquote class="quote__content img--container quote">
-          <h3 class="quote__heading">Lorem ipsum dolor sit amet.</h3>
-          <p class="quote__p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            assumenda totam sit omnis, rem tempore quidem numquam culpa dolore iure.
-          </p>
-          <button class="btn btn--primary quote__btn" type="submit">Learn More</button>
-        </blockquote>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero__content">
+        <h1 class="hero__title">Premium Organic Chia Seeds</h1>
+        <p class="hero__subtitle">Discover the natural power of superfoods for a healthier lifestyle</p>
+        <div class="hero__actions">
+          <a href="/products.html" class="btn btn--primary btn--large">Shop Now</a>
+          <a href="#learn-more" class="btn btn--outline btn--large">Learn More</a>
+        </div>
       </div>
     </section>
-    <section class="block container block-subs">
-      <h2>Helps us make more sustainable projects</h2>
-      <p>
-        Donec turpis sapien, dignissim in augue ac, venenatis interdum justo.
-      </p>
-  
-      <div class="input--group__inline" >
-        <input class="input" type="text" name="range" placeholder="Email" />
-        <button class="btn" type="submit">Subscribe</button>
+
+    <!-- Featured Products -->
+    <section class="block">
+      <div class="container">
+        <h2 class="text-center mb-5">Featured Products</h2>
+        <div class="grid grid--cols-3">
+          <div class="card product-card">
+            <span class="product-card__badge">Bestseller</span>
+            <img 
+              class="card__image" 
+              src="images/chia-product-1.webp"
+              srcset="images/chia-product-1@2x.webp 2x, images/chia-product-1@3x.webp 3x"
+              alt="Organic Black Chia Seeds 1lb"
+            />
+            <div class="card__header">
+              <h3 class="card__title">Organic Black Chia Seeds</h3>
+              <p class="card__subtitle">1 lb bag</p>
+            </div>
+            <div class="card__body">
+              <p>Premium quality organic chia seeds, rich in omega-3 fatty acids and fiber.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__price">$12.99</span>
+              <button class="btn btn--primary btn--small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card product-card">
+            <img 
+              class="card__image" 
+              src="images/chia-product-2.webp"
+              srcset="images/chia-product-2@2x.webp 2x, images/chia-product-2@3x.webp 3x"
+              alt="Organic White Chia Seeds 1lb"
+            />
+            <div class="card__header">
+              <h3 class="card__title">Organic White Chia Seeds</h3>
+              <p class="card__subtitle">1 lb bag</p>
+            </div>
+            <div class="card__body">
+              <p>Mild-flavored white chia seeds, perfect for smoothies and baking.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__price">$13.99</span>
+              <button class="btn btn--primary btn--small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card product-card">
+            <span class="product-card__badge">New</span>
+            <img 
+              class="card__image" 
+              src="images/chia-product-3.webp"
+              srcset="images/chia-product-3@2x.webp 2x, images/chia-product-3@3x.webp 3x"
+              alt="Chia Seeds Variety Pack"
+            />
+            <div class="card__header">
+              <h3 class="card__title">Chia Seeds Variety Pack</h3>
+              <p class="card__subtitle">3 x 12 oz bags</p>
+            </div>
+            <div class="card__body">
+              <p>Try all our premium varieties in one convenient pack.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__price">$29.99</span>
+              <span class="card__price--old">$35.97</span>
+              <button class="btn btn--primary btn--small">Add to Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="block--dark">
-      <footer class="container footer">
-        <ul class=" list list__brand">
-          <li class="list__items"><img src="images/logo.svg" alt="" class="footer__logo logo-filtre"></li>
-          <li class="list__items footer__discription logo-filtre">Earth Heart Foundation Cebu &comp; 2020. All Rights Reserved</li>
-          <li class="list__items"><img src="images/social.svg" alt="" class="media logo-filtre"></li>
-        </ul>
-          <ul class="list list__about">
-          <li class=" footer__discription logo-filtre">Privacy Policy</li>
-          <li class="list__items footer__discription logo-filtre">Terms And Conditions</li>
-          <li class=" footer__discription logo-filtre">+631119111</li>
-          <li class=" footer__discription logo-filtre">United 12bg streets </li>
-          <li class=" footer__discription logo-filtre">city,Country444</li>
-        </ul>
-      </footer>
+
+    <!-- Stats Section -->
+    <section class="block" id="learn-more">
+      <div class="container">
+        <div class="stats">
+          <div class="stats__item">
+            <p class="stats__number">100%</p>
+            <p class="stats__label">Organic</p>
+          </div>
+          <div class="stats__item">
+            <p class="stats__number">50K+</p>
+            <p class="stats__label">Happy Customers</p>
+          </div>
+          <div class="stats__item">
+            <p class="stats__number">15+</p>
+            <p class="stats__label">Years Experience</p>
+          </div>
+          <div class="stats__item">
+            <p class="stats__number">4.9★</p>
+            <p class="stats__label">Average Rating</p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- Why Chia Section -->
+    <section class="block">
+      <div class="container">
+        <h2 class="text-center mb-5">Why Choose Chia Seeds?</h2>
+        <div class="grid grid--cols-3">
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Rich in Nutrients</h3>
+            </div>
+            <div class="card__body">
+              <p>Packed with omega-3 fatty acids, fiber, protein, and essential minerals to support your health and wellness goals.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Versatile Superfood</h3>
+            </div>
+            <div class="card__body">
+              <p>Easy to incorporate into smoothies, yogurt, baked goods, or simply mix with water for a nutritious chia gel.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Sustainably Sourced</h3>
+            </div>
+            <div class="card__body">
+              <p>Our chia seeds are ethically sourced from certified organic farms committed to environmental sustainability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="block">
+      <div class="container">
+        <div class="card text-center">
+          <h2 class="mb-3">Join Our Newsletter</h2>
+          <p class="text-secondary mb-4">
+            Get exclusive offers, recipes, and health tips delivered to your inbox.
+          </p>
+          <form class="input-group" style="max-width: 500px; margin: 0 auto;">
+            <input 
+              class="input" 
+              type="email" 
+              name="email" 
+              placeholder="Enter your email address" 
+              required
+              aria-label="Email address"
+            />
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__grid">
+          <div class="footer__section footer__brand">
+            <img src="images/chia-logo.svg" alt="Chia Commerce" class="footer__logo" />
+            <p class="footer__description">
+              Your trusted source for premium organic chia seeds and natural superfood products.
+            </p>
+          </div>
+
+          <div class="footer__section">
+            <h4>Shop</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="/products.html" class="footer__link">All Products</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/bestsellers.html" class="footer__link">Bestsellers</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/bundles.html" class="footer__link">Bundles</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/new-arrivals.html" class="footer__link">New Arrivals</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h4>Support</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="/contact.html" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/shipping.html" class="footer__link">Shipping Info</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/returns.html" class="footer__link">Returns</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/faq.html" class="footer__link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h4>Company</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="/about.html" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/sustainability.html" class="footer__link">Sustainability</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/blog.html" class="footer__link">Blog</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="/careers.html" class="footer__link">Careers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2024 Chia Commerce. All rights reserved. | 
+            <a href="/privacy.html" class="footer__link">Privacy Policy</a> | 
+            <a href="/terms.html" class="footer__link">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <script src="js/main.js"></script>
   </body>
 </html>
