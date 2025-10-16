@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Complete your donation">
+    <meta property="og:title" content="Checkout - EarthHeart Foundation" >
+    <title>Checkout - Earth Heart Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .checkout-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+        margin-top: 40px;
+      }
+      
+      .checkout-summary {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 8px;
+      }
+      
+      .checkout-summary h3 {
+        margin-top: 0;
+      }
+      
+      .checkout-items {
+        margin: 20px 0;
+      }
+      
+      .checkout-item {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      .checkout-totals {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 2px solid #ddd;
+      }
+      
+      .checkout-subtotal,
+      .checkout-total {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+      }
+      
+      .checkout-total {
+        font-size: 20px;
+        color: #2d7f5e;
+        margin-top: 15px;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .checkout-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container collapsible nav">
+      <a href="index.html"><img class="nav__logo nav__menu logo-filtre" src="images/logo.svg" alt="Earth Heart Foundation"></a>
+      <ul class="list nav__list collapsible__content">
+        <li class="list__items"><a href="index.html">Home</a></li>
+        <li class="list__items">About</li>
+        <li class="list__items"><a href="products.html">Products</a></li>
+        <li class="list__items">Partner</li>
+        <li class=""><img class="nav__logo nav__cols" src="images/logo.svg" alt=""></li>
+        <li class="list__items">Mission</li>
+        <li class="list__items">News</li>
+        <li class="list__items">FAQ</li>
+        <li class="list__items">
+          <a href="cart.html" style="position: relative; display: inline-block;">
+            Cart
+            <span data-cart-badge style="display: none; position: absolute; top: -8px; right: -12px; background: #e63946; color: white; border-radius: 50%; width: 20px; height: 20px; font-size: 12px; line-height: 20px; text-align: center;">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="block container">
+      <h1 style="margin: 40px 0 20px;">Checkout</h1>
+      
+      <div class="checkout-grid">
+        <div>
+          <div class="card">
+            <h2>Billing Information</h2>
+            
+            <div class="input--group">
+              <label class="label" for="name">Full Name *</label>
+              <input class="input" type="text" name="name" id="name" required>
+            </div>
+            
+            <div class="input--group">
+              <label class="label" for="email">Email Address *</label>
+              <input class="input" type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="input--group">
+              <label class="label" for="phone">Phone Number</label>
+              <input class="input" type="tel" name="phone" id="phone">
+            </div>
+            
+            <div class="input--group">
+              <label class="label" for="address">Address</label>
+              <input class="input" type="text" name="address" id="address">
+            </div>
+            
+            <div class="input--group">
+              <label class="label" for="city">City</label>
+              <input class="input" type="text" name="city" id="city">
+            </div>
+            
+            <div class="input--group">
+              <label class="label" for="country">Country</label>
+              <input class="input" type="text" name="country" id="country">
+            </div>
+            
+            <div class="input--group">
+              <label class="label" for="notes">Special Notes or Dedication (Optional)</label>
+              <textarea class="input" name="notes" id="notes" rows="4" style="resize: vertical;"></textarea>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <div data-checkout-summary></div>
+          
+          <button 
+            class="btn btn--primary btn--streched" 
+            style="margin-top: 20px; font-size: 18px; padding: 15px;"
+            onclick="handleCheckout(event)"
+          >
+            Complete Donation
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="block--dark">
+      <footer class="container footer">
+        <ul class="list list__brand">
+          <li class="list__items"><img src="images/logo.svg" alt="" class="footer__logo logo-filtre"></li>
+          <li class="list__items footer__discription logo-filtre">Earth Heart Foundation Cebu &comp; 2020. All Rights Reserved</li>
+          <li class="list__items"><img src="images/social.svg" alt="" class="media logo-filtre"></li>
+        </ul>
+        <ul class="list list__about">
+          <li class="footer__discription logo-filtre">Privacy Policy</li>
+          <li class="list__items footer__discription logo-filtre">Terms And Conditions</li>
+          <li class="footer__discription logo-filtre">+631119111</li>
+          <li class="footer__discription logo-filtre">United 12bg streets</li>
+          <li class="footer__discription logo-filtre">city,Country444</li>
+        </ul>
+      </footer>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+      function handleCheckout(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        
+        if (!name || !email) {
+          alert('Please fill in all required fields (Name and Email)');
+          return;
+        }
+        
+        const cart = CART.loadCart();
+        
+        if (cart.length === 0) {
+          alert('Your cart is empty!');
+          window.location.href = 'products.html';
+          return;
+        }
+        
+        alert('Thank you for your donation! This is a demo - no actual payment has been processed.');
+        
+        CART.clearCart();
+        
+        window.location.href = 'index.html';
+      }
+    </script>
+  </body>
+</html>
